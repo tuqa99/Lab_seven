@@ -43,8 +43,8 @@ class _myFirstScrenState extends State<myFirstScren> {
             RadioListTile(
               selectedTileColor: Colors.red,
               secondary: Icon(Icons.man),
-              title: Text("meale"),
-              value: "meale",
+              title: Text("male"),
+              value: 1,
               groupValue: gender,
               onChanged: (val) {
                 gender = val.toString();
@@ -54,7 +54,7 @@ class _myFirstScrenState extends State<myFirstScren> {
               selectedTileColor: Colors.red,
               secondary: Icon(Icons.man),
               title: Text("female"),
-              value: "female",
+              value: 2,
               groupValue: gender,
               onChanged: (val) {
                 gender = val.toString();
