@@ -44,20 +44,24 @@ class _myFirstScrenState extends State<myFirstScren> {
               selectedTileColor: Colors.red,
               secondary: Icon(Icons.man),
               title: Text("male"),
-              value: 1,
+              value: "male",
               groupValue: gender,
               onChanged: (val) {
-                gender = val.toString();
+                setState(() {
+                  gender = val.toString();
+                });
               },
             ),
             RadioListTile(
               selectedTileColor: Colors.red,
               secondary: Icon(Icons.man),
               title: Text("female"),
-              value: 2,
+              value: "female",
               groupValue: gender,
               onChanged: (val) {
-                gender = val.toString();
+               setState(() {
+                  gender = val.toString();
+               });
               },
             ),
             Text(
@@ -70,22 +74,27 @@ class _myFirstScrenState extends State<myFirstScren> {
 
             RadioListTile(
               selectedTileColor: Colors.red,
-              secondary: Icon(Icons.man),
+              secondary: Icon(Icons.widgets),
               title: Text("Increase or decrease in weight"),
               value: "Increase or decrease in weight",
               groupValue: Wight,
               onChanged: (val) {
-                Wight = val.toString();
+                setState(() {
+                  Wight = val.toString();
+                });
+                
               },
             ),
             RadioListTile(
               selectedTileColor: Colors.red,
-              secondary: Icon(Icons.man),
+              secondary: Icon(Icons.fitbit_sharp),
               title: Text("Maintaining a stable weight"),
               value: "Maintaining a stable weight",
               groupValue: Wight,
-              onChanged: (val) {
+              onChanged: (val) { setState(() {
                 Wight = val.toString();
+              });
+                
               },
             ),
 
